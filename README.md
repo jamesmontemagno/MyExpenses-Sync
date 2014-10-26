@@ -1,7 +1,7 @@
 My Expenses
 ==========
 
-My Expenses Cross Platform Demo from TechEd Europe 2014. This is a new Azure Mobile Serive + SQLite Offline Online sync that was based off the original [MyExpenses Application that I build on Channel 9](http://www.github.com/jamesmontemagno/myexpenses)
+My Expenses Cross Platform Demo from TechEd Europe 2014. This is a new Azure Mobile Serive + SQLite Offline Online sync that was based off the original [MyExpenses Application that I built on Channel 9](http://www.github.com/jamesmontemagno/myexpenses)
 
 Videos are available on Channel 9:
 
