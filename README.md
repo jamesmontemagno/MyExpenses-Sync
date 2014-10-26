@@ -1,7 +1,7 @@
 My Expenses
 ==========
 
-My Expenses Cross Platform Demo - VSToolbox
+My Expenses Cross Platform Demo from TechEd Europe 2014. This is a new Azure Mobile Serive + SQLite Offline Online sync that was based off the original [MyExpenses Application that I build on Channel 9](http://www.github.com/jamesmontemagno/myexpenses)
 
 Videos are available on Channel 9:
 
@@ -43,9 +43,6 @@ https://components.xamarin.com/view/btprogresshud - Great spinner for iOS
 ### MonoTouch.Dialog
 http://docs.xamarin.com/guides/ios/user_interface/monotouch.dialog/ - A wonderful library for Xamarin.iOS to create user interfaces quick with not a lot of code.
 
-### Sqlite-net PCL
-https://github.com/praeclarum/sqlite-net - A wonderful library for cross platform sqlite databases.
-Now in PCL form with: https://github.com/oysteinkrog/Sqlite.net-pcl
 
 ### Azure Mobile Services Integration
 
