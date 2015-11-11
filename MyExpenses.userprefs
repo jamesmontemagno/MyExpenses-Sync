@@ -1,0 +1,33 @@
+﻿<Properties StartupItem="MyExpenses.iOS/MyExpenses.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.4" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Shared/ServiceRegistrar.cs">
+    <Files>
+      <File FileName="MyExpenses.Portable/Services/AzureExpenseService.cs" Line="31" Column="6" />
+      <File FileName="MyExpenses.iOS/Views/ExpensesViewController.cs" Line="108" Column="44" />
+      <File FileName="MyExpenses.Android/MyExpensesApplication.cs" Line="42" Column="27" />
+      <File FileName="Shared/ServiceRegistrar.cs" Line="59" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MyExpenses" expanded="True" selected="True">
+            <Node name="Tests" expanded="True" />
+            <Node name="MyExpenses.Android" expanded="True">
+              <Node name="Adapters" expanded="True" />
+              <Node name="Helpers" expanded="True" />
+              <Node name="PlatformSpecific" expanded="True" />
+              <Node name="Views" expanded="True" />
+            </Node>
+            <Node name="MyExpenses.Portable" expanded="True">
+              <Node name="Services" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

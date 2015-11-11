@@ -22,8 +22,8 @@ namespace MyExpenses.PlatformSpecific
     {
      //comment back in to enable Azure Mobile Services.
      MobileService = new MobileServiceClient(
-       "https://" + "yoursite" + ".azure-mobile.net/",
-       "yourapikey");
+       "https://" + "url" + ".azure-mobile.net/",
+                "key");
     }
 
     
@@ -86,7 +86,7 @@ namespace MyExpenses.PlatformSpecific
       try
       {
         await MobileService.SyncContext.PushAsync();
-        await expenseTable.PullAsync();
+                await expenseTable.PullAsync("getExpenses", expenseTable.CreateQuery());
       }
       catch (MobileServiceInvalidOperationException e)
       {
