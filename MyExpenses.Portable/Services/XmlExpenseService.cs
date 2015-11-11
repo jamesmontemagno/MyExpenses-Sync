@@ -61,13 +61,30 @@ namespace MyExpenses.Portable.Services
     public async Task<IEnumerable<Expense>> GetExpensesAsync()
     {
       var rootFolder = FileSystem.Current.LocalStorage;
+
       var folder = await rootFolder.CreateFolderAsync(Folder,
           CreationCollisionOption.OpenIfExists);
+
       var file = await folder.CreateFileAsync(File,
           CreationCollisionOption.OpenIfExists);
+
       var json = await file.ReadAllTextAsync();
+
       if(!string.IsNullOrWhiteSpace(json))
         Expenses = DeserializeObject<List<Expense>>(json);
+
+      if(Expenses.Count == 0)
+      {
+        var expense =  new Expense
+          {
+            Billable = true,
+            Category = "Uncategorized",
+            Name = "DevWeek 2015 Flight",
+            Total = "1000"
+          };
+        await SaveExpenseAsync(expense);
+        Expenses.Add(expense); ;
+      }
 
       return Expenses;
     }
@@ -108,10 +125,13 @@ namespace MyExpenses.Portable.Services
     private async Task Save()
     {
       var rootFolder = FileSystem.Current.LocalStorage;
+
       var folder = await rootFolder.CreateFolderAsync(Folder,
           CreationCollisionOption.OpenIfExists);
+
       var file = await folder.CreateFileAsync(File,
           CreationCollisionOption.ReplaceExisting);
+
       await file.WriteAllTextAsync(JsonConvert.SerializeObject(Expenses));
     }
 

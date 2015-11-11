@@ -27,15 +27,13 @@ namespace MyExpenses.Portable.BusinessLayer.Contracts {
 	/// Business entity base class. Provides the ID property.
 	/// </summary>
 	public abstract class BusinessEntityBase : Interfaces.IBusinessEntity {
-		public BusinessEntityBase ()
-		{
-		}
+		
 		
 		/// <summary>
 		/// Gets or sets the Database ID.
 		/// </summary>
      [JsonProperty(PropertyName = "id")]
-    public string Id { get; set; }
+     public string Id { get; set; }
 
      [Microsoft.WindowsAzure.MobileServices.Version]
      public string Version { get; set; }  

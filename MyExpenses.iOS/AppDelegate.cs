@@ -12,13 +12,17 @@ namespace MyExpenses.iOS
   // The UIApplicationDelegate for the application. This class is responsible for launching the 
   // User Interface of the application, as well as listening (and optionally responding) to 
   // application events from iOS.
-  [Register("AppDelegate")]
+  [Foundation.Register("AppDelegate")]
   public partial class AppDelegate : UIApplicationDelegate
   {
 
     // class-level declarations
-    UIWindow window;
-    private UINavigationController navigationController;
+    public override UIWindow Window
+    {
+      get;
+      set;
+    }
+    
     //
     // This method is invoked when the application has loaded and is ready to run. In this 
     // method you should instantiate the window, load the UI into it and then make the window
@@ -28,18 +32,23 @@ namespace MyExpenses.iOS
     //
     public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     {
+       var platform = new Microsoft.WindowsAzure.MobileServices.CurrentPlatform();   
+       System.Diagnostics.Debug.WriteLine(platform);
       // create a new window instance based on the screen size
-      window = new UIWindow(UIScreen.MainScreen.Bounds);
       ServiceRegistrar.Startup();
 
-      navigationController = new UINavigationController(new ExpensesViewController());
-      // If you have defined a view, add it here:
-       window.RootViewController  = navigationController;
+      UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes
+      {
+        TextColor = UIColor.White
+      });
 
-      // make the window visible
-      window.MakeKeyAndVisible();
+      UINavigationBar.Appearance.TintColor = UIColor.White;
+      UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(52,152,219);
+
+     
 
       return true;
     }
+
   }
 }

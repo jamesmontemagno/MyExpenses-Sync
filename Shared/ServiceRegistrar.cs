@@ -55,7 +55,7 @@ namespace MyExpenses.Helpers
 #endif
 
       var expenseService = new XmlExpenseService();
-      //var expenseService = new AzureExpenseService();
+	  //var expenseService = AzureExpenseService.Instance;
       //expenseService.Init().Wait();
 
       ServiceContainer.Register<IMessageDialog>(() => new MessageDialog());
