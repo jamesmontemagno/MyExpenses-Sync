@@ -5,9 +5,9 @@ My Expenses Cross Platform Demo from TechEd Europe 2014. This is a new Azure Mob
 
 Videos are available on Channel 9:
 
-[Part 1: Cross Platform Mobile Development with Xamarin](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Cross-Platform-Development-With-Xamarin)
+[Part 1: Cross Platform Mobile Development with Xamarin](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Cross-Platform-Development-With-Xamarin?WT.mc_id=friends-0000-jamont)
 
-[Part 2: Using Portable Class Libraries with Xamarin](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Using-Portable-Class-Libraries-with-Xamarin)
+[Part 2: Using Portable Class Libraries with Xamarin](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Using-Portable-Class-Libraries-with-Xamarin?WT.mc_id=friends-0000-jamont)
 
 Expense taking cross platform application for Windows Phone, Android, and iOS built with Xamarin inside of Visual Studio 2013. Expenses are stored locally in a Sqlite-net database. You can add new expenses and edit or delete existing. All business logic is shared in one portable class library.
 
@@ -15,7 +15,7 @@ Written in C# with ([Xamarin](http://www.xamarin.com))  **Created in Visual Stud
 
 Open Source Project by ([@JamesMontemagno](http://www.twitter.com/jamesmontemagno)) 
 
-For Windows Phone you must install SQLite for Windows Phone Extension: http://visualstudiogallery.msdn.microsoft.com/cd120b42-30f4-446e-8287-45387a4f40b7
+For Windows Phone you must install SQLite for Windows Phone Extension: https://visualstudiogallery.msdn.microsoft.com/cd120b42-30f4-446e-8287-45387a4f40b7?WT.mc_id=friends-0000-jamont
 
 ** For Azure Mobile Services Integration please read the setup at the bottom of this page! **
 
@@ -47,9 +47,9 @@ http://docs.xamarin.com/guides/ios/user_interface/monotouch.dialog/ - A wonderfu
 ### Azure Mobile Services Integration
 
 * Create a new Azure Mobile Services Table Called "Expense"
-* Follow this guide to setup the Table for Authentication: http://www.windowsazure.com/en-us/develop/mobile/tutorials/get-started-with-users-dotnet/
+* Follow this guide to setup the Table for Authentication: https://www.windowsazure.com/develop/mobile/tutorials/get-started-with-users-dotnet/?WT.mc_id=friends-0000-jamont
 
-* Setup Azure Scripts for Insert, Read, Update: http://www.windowsazure.com/en-us/develop/mobile/tutorials/authorize-users-in-scripts-dotnet/
+* Setup Azure Scripts for Insert, Read, Update: https://www.windowsazure.com/develop/mobile/tutorials/authorize-users-in-scripts-dotnet/?WT.mc_id=friends-0000-jamont
 
 * Setup Twitter App for Authentication: http://www.dotnetcurry.com/ShowArticle.aspx?ID=860
 
